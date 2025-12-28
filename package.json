@@ -20,7 +20,7 @@
   "license": "GPL-3.0",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/N00BFACE/video-call-webrtc.git"
   },
   "dependencies": {
     "express": "^5.2.1",

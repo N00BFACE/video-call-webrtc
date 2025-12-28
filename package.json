@@ -1,0 +1,29 @@
+{
+  "name": "video-call-project",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Real-time video calling application using WebRTC, Node.js, Express, and Socket.io",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "webrtc",
+    "video-call",
+    "socket.io",
+    "real-time",
+    "peer-to-peer"
+  ],
+  "author": "n00bface <bishalkumar45657@gmail.com>",
+  "license": "GPL-3.0",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "socket.io": "^4.8.3"
+  }
+}

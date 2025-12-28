@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Call Room</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/room.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Video Call Room</h1>
+    </header>
+    <main>
+        <div class="video-container">
+            <!-- Local video (always present) -->
+            <div class="video-wrapper">
+                <video id="localVideo" autoplay muted playsinline></video>
+                <p id="localUserName">You</p>
+            </div>
+            <!-- Remote videos will be added dynamically here -->
+        </div>
+        <p>Room ID: <span id="roomIdDisplay"></span></p>
+        <div class="controls">
+            <button id="muteButton">Mute</button>
+            <button id="cameraButton">Turn Camera Off</button>
+            <button id="endCallButton">End Call</button>
+        </div>
+    </main>
+
+    <!-- Join Request Modal -->
+    <div id="requestModal" class="modal hidden">
+        <div class="modal-content">
+            <h2>Join Request</h2>
+            <p><span id="requesterName"></span> wants to join your call</p>
+            <div class="modal-buttons">
+                <button id="acceptButton">Accept</button>
+                <button id="rejectButton">Reject</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Video Call App</p>
+    </footer>
+</body>
+
+</html>

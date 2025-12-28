@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Call App</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to Video Call</h1>
+    </header>
+    <main>
+        <div class="form-group">
+            <input type="text" id="userName" placeholder="Enter your name">
+        </div>
+        <div class="form-group">
+            <button id="createRoom">Create Room</button>
+        </div>
+
+        <p>- or -</p>
+
+        <div class="form-group">
+            <input type="text" id="roomId" placeholder="Enter room ID">
+            <button id="joinRoom">Join Room</button>
+        </div>
+
+        <p id="statusMessage"></p>
+    </main>
+    <footer>
+        <p>&copy; 2025 Video Call App</p>
+    </footer>
+</body>
+
+</html>
